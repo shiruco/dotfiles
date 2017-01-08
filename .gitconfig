@@ -1,0 +1,47 @@
+[user]
+  name = shiruco
+  email = shiruco621@gmail.com
+[core]
+  excludesfile = ~/.gitignore_global
+  autocrlf = input
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+[push]
+  default = simple
+[merge]
+  tool = vimdiff
+[diff]
+  tool = vimdiff
+[alias]
+  ad = add
+  fto = fetch origin
+  cm = commit
+  s  = status
+  st = status -sb
+# checkout
+  co = checkout
+  cob = checkout -b
+  cod = checkout develop
+  com = checkout master
+  ac = !git add -A && git commit
+  fetch-pulls = fetch origin +refs/pull/*:refs/remotes/pull/*
+[ghq]
+  root = ~/development
+  root = ~/.go/current/src
+[rebase]
+  autostash=true
+[credential]
+  helper = osxkeychain
+[filter "lfs"]
+  required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
