@@ -1,10 +1,5 @@
 set default_user "shiruco"
 
-source ~/.config/fish/path.fish
-source ~/.config/fish/aliases.fish
-source ~/.config/fish/chpwd.fish
-source ~/.config/fish/functions.fish
-
 # THEME PURE #
 set fish_function_path ~/.config/fish/functions/pure $fish_function_path
 
