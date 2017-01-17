@@ -5,6 +5,8 @@ set fish_function_path ~/.config/fish/functions/pure $fish_function_path
 
 export GOPATH=$HOME/.go/
 
+source ~/.aliases
+
 # Completions
 function make_completion --argument-names alias command
     echo "
